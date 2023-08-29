@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>SuperVisor</title>
+    </head>
+    <body onload="load(), checkAlert()">
+        <div>
+            <section class="button_app">
+                <button class="--add" onclick="showMenu()">&plus;</button>
+                <button class="--delete" onclick="checkInfo()">&minus;</button>
+                <button class="--edit" onclick="showEdit()"><img
+                    draggable="false"
+                    src="https://pixsector.com/cache/c5433603/av741f3e5fd1c88304cf8.png"
+                    alt="edit"></button>
+                <button class="--info" onclick="showAlert()"><img
+                    draggable="false"
+                    src="https://cdn-icons-png.flaticon.com/512/607/607870.png"
+                    alt="alert"></button>
+            </section>
+        </div>
+        <div class="grid_app">
+            <section class="--name">
+                Imię
+            </section>
+            <section class="--surname">
+                Nazwisko
+            </section>
+            <section class="--workplace">
+                Stanowisko
+            </section>
+            <section class="--company">
+                Firma
+            </section>
+        </div>
+        <div class="add_menu">
+            <button class="x" onclick="hideMenu()">&#10005</button>
+            <div class="--name_menu">Imię:</div><input type="text" id="name">
+            <div class="--surname_menu">Nazwisko:</div><input type="text" id="surname">
+            <div class="--workplace_menu">Stanowisko:</div><input type="text" id="workplace">
+            <div class="--company_menu">Firma:</div><input type="text" id="company">
+            <div class="--startwork_menu">Data rozpoczęcia umowy:</div><input type="date" id="startwork">
+            <div class="--stopwork_menu">Data zakończenia umowy:</div><input type="date" id="stopwork">
+            <div class="--startinsuarce_menu">Data wykonania badań lekarskich:</div><input type="date" id="startinsuarce">
+            <div class="--stopinsuarce_menu">Data końcowa badań lekarskich:</div><input type="date" id="stopinsuarce">
+            <button onclick="clearMenu()">Wyczyść</button>
+            <button onclick="addWorker()">Dodaj</button>
+        </div>
+    </div>
+    <div class="info_menu">
+        <button class="x" onclick="hideInfo()">&#10005</button>
+        <div class="--name_info_menu">Imię:</div>
+        <p id="name_info">test</p>
+        <div class="--surname_info_menu">Nazwisko:</div>
+        <p id="surname_info">test</p>
+        <div class="--workplace_info_menu">Stanowisko:</div>
+        <p id="workplace_info">test</p>
+        <div class="--company_info_menu">Firma:</div>
+        <p id="company_info">test</p>
+        <div class="--startwork_info_menu">Data rozpoczęcia umowy:</div>
+        <p id="startwork_info">test</p>
+        <div class="--stopwork_info_menu">Data zakończenia umowy:</div>
+        <p id="stopwork_info">test</p>
+        <div class="--startinsuarce_info_menu">Data wykonania badań lekarskich:</div>
+        <p id="startinsuarce_info">test</p>
+        <div class="--stopinsuarce_info_menu">Data końcowa badań lekarskich:</div>
+        <p id="stopinsuarce_info">test</p>
+    </div>  
+    <div class="edit_menu">
+        <button class="x" onclick="hideEdit()">&#10005</button>
+        <div class="--name_edit_menu">Imię:</div><input type="text" id="name_edit">
+        <div class="--surname_edit_menu">Nazwisko:</div><input type="text" id="surname_edit">
+        <div class="--workplace_edit_menu">Stanowisko:</div><input type="text" id="workplace_edit">
+        <div class="--company_edit_menu">Firma:</div><input type="text" id="company_edit">
+        <div class="--startwork_edit_menu">Data rozpoczęcia umowy:</div><input type="date" id="startwork_edit">
+        <div class="--stopwork_edit_menu">Data zakończenia umowy:</div><input type="date" id="stopwork_edit">
+        <div class="--startinsuarce_edit_menu">Data wykonania badań lekarskich:</div><input type="date" id="startinsuarce_edit">
+        <div class="--stopinsuarce_edit_menu">Data końcowa badań lekarskich:</div><input type="date" id="stopinsuarce_edit">
+        <button onclick="edit()">Edytuj</button>
+    </div>
+    <div class="alert_menu">
+        <button class="x" onclick="hideAlert()">&#10005</button>
+        <div class="--inside_alert">
+           <p class="--default_alert">Brak wydarzeń</p>
+        </div>
+    </div>
+    </body>
+    <script src="./script_menu.js"></script>
+    <script src="./script_load.js"></script>
+    <script src="./script_delete.js"></script>
+    <script src="./script_add.js"></script>
+    <script src="./script_info.js"></script>
+    <script src="./script_edit.js"></script>
+    <script src="./script_alerts.js"></script>
+</html>

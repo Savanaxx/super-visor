@@ -1,0 +1,108 @@
+.edit_menu {
+    display: none;
+    position: absolute;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    width: 40%;
+    height: 85%;
+    border-radius: 1em;
+    gap: 6px;
+    justify-content: flex-start;
+    flex-direction: column;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    #name_edit {
+        width: 60%;
+        height: 5%;
+        margin: 5px;
+    }
+    .--name_edit_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    .--surname_edit_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #surname_edit {
+        width: 60%;
+        height: 5%;
+        margin: 5px;
+    }
+    .--workplace_edit_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+
+    }
+    #workplace_edit {
+        width: 60%;
+        height: 5%;
+        margin: 5px;
+    }
+    .--company_edit_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+
+    }
+    #company_edit {
+        width: 60%;
+        height: 5%;
+        margin: 5px;
+    }
+    .--startwork_edit_menu {
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #startwork_edit {
+        width: 60%;
+        margin: 5px;
+        height: 5%;
+    }
+    .--stopwork_edit_menu {
+
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #stopwork_edit {
+        width: 60%;
+        margin: 5px;
+        height: 5%;
+    }
+    .--startinsuarce_edit_menu {
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #startinsuarce_edit {
+        width: 60%;
+        margin: 5px;
+        height: 5%;
+    }
+    .--stopinsuarce_edit_menu {
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #stopinsuarce_edit {
+        width: 60%;
+        height: 5%;
+        margin: 5px;
+    }
+}

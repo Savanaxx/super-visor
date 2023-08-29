@@ -1,0 +1,161 @@
+.info_menu{
+    display: none;
+    position: absolute;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    width: 40%;
+    height: 85%;
+    border-radius: 1em;
+    gap: 6px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: large;
+    .--name_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--surname_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--workplace_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--company_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+
+    }
+    .--startwork_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--stopwork_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--startinsuarce_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--stopinsuarce_info_menu{
+        width: 100%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    #name_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #surname_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #workplace_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #company_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #startwork_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #stopwork_info{        
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #startinsuarce_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+    #stopinsuarce_info{
+        height: 3%;
+        color: chocolate;
+        background-color: white;
+        text-align: center;
+        margin: 1%;
+        margin-bottom: 5%;
+    }
+}

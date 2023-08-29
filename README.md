@@ -1,2 +1,2 @@
-# super visor
- app to manage workers in electron
+# SuperVisor
+App to manage workers (electron.js)

@@ -1,0 +1,108 @@
+.add_menu {
+    display: none;
+    position: absolute;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    width: 40%;
+    height: 85%;
+    border-radius: 1em;
+    gap: 6px;
+    justify-content: flex-start;
+    flex-direction: column;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    #name {
+        width: 60%;
+        height: 10%;
+        margin: 5px;
+    }
+    .--name_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    .--surname_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #surname {
+        width: 60%;
+        height: 10%;
+        margin: 5px;
+    }
+    .--workplace_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+
+    }
+    #workplace {
+        width: 60%;
+        height: 10%;
+        margin: 5px;
+    }
+    .--company_menu {
+        width: 10%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+
+    }
+    #company {
+        width: 60%;
+        height: 10%;
+        margin: 5px;
+    }
+    .--startwork_menu {
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #startwork {
+        width: 60%;
+        margin: 5px;
+        height: 10%;
+    }
+    .--stopwork_menu {
+
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #stopwork {
+        width: 60%;
+        margin: 5px;
+        height: 10%;
+    }
+    .--startinsuarce_menu {
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #startinsuarce {
+        width: 60%;
+        margin: 5px;
+        height: 10%;
+    }
+    .--stopinsuarce_menu {
+        width: 70%;
+        height: 5%;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+    #stopinsuarce {
+        width: 60%;
+        height: 10%;
+        margin: 5px;
+    }
+}

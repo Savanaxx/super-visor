@@ -1,0 +1,103 @@
+
+@mixin header() {
+    border: 2.6px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+@mixin list() {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 1.5em;
+    padding: 3px;
+    padding-left: 10px;
+}
+
+@mixin more() {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 6px;
+
+}
+
+.grid_app {
+    margin: 3px;
+    display: grid;
+    color: $third-color;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr;
+    .--name {
+        @include header();
+        grid-column-start: 2;
+        grid-column-end: 2;
+        font-size: 2em;
+        font-weight: bold;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--surname {
+        @include header();
+        grid-column-start: 3;
+        grid-column-end: 3;
+        border-left: 0;
+        font-size: 2em;
+        font-weight: bold;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--company {
+        @include header();
+        grid-column-start: 5;
+        grid-column-end: 5;
+        border-left: 0;
+        font-size: 2em;
+        font-weight: bold;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--workplace {
+        @include header();
+        grid-column-start: 4;
+        grid-column-end: 4;
+        border-left: 0;
+        font-size: 2em;
+        font-weight: bold;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    .--list_name {
+        @include list();
+        border-left: 2px black solid;
+    }
+
+    .--list_surname {
+        @include list();
+    }
+
+    .--list_workplace {
+        @include list();
+    }
+    .--list_company {
+        @include list();
+    }
+
+    .--list_more {
+        @include more();
+        text-align: center;
+    }
+    .--list_more:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .--list_checkbox {
+        grid-column-start: 1;
+        justify-self: center;
+        grid-template-columns: fit-c;
+    }
+}

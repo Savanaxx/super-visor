@@ -1,0 +1,54 @@
+$primary-color: #FFFFFF;
+$secondary-color: #FFBF00;
+$third-color: #2274A5;
+$font: Helvetica, sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    ::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $font;
+    --webkit-filter: blur(10);
+}
+
+input{
+    height: 50px;
+    width: 20px;
+}
+
+@keyframes pulse{
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: crimson;
+    }
+    75%{
+        background-color: brown;
+    }
+    100%{
+        background-color: crimson;
+    }
+}
+
+@import '_button.scss';
+@import '_grid.scss';
+@import '_addmenu.scss';
+@import '_infomenu.scss';
+@import '_editmenu.scss';
+@import '_alertmenu.scss';
